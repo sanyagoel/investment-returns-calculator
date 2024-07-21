@@ -1,9 +1,9 @@
 
 export default  function  returnInvestment(startAmount,annualContribution,rateOfReturn,duration){
-     startAmount = Number(startAmount);
-     annualContribution = Number(annualContribution);
-     rateOfReturn = Number(rateOfReturn);
-     duration = Number(duration);
+    //  startAmount = Number(startAmount);
+    //  annualContribution = Number(annualContribution);
+    //  rateOfReturn = Number(rateOfReturn);
+    //  duration = Number(duration);
     let arrayData = [];
 
     let startingAmount = startAmount;   

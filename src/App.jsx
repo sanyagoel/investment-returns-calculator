@@ -6,21 +6,18 @@ import { useState } from "react";
 
 function App() {
   const [values, setValues] = useState([]);
-  const [target, setTarget] = useState(false);
   function changeValues(values, index, newValue) {
-    if (index === 3 && (newValue < 1 && newValue !== '')) {
-      setTarget(true);
-    } else {
-      setTarget(false);
-    }
+
     setValues((values) => {
       const newSet = [...values];
-      newSet[index] = newValue;
+      newSet[index] = +newValue;
       
       
       return newSet;
     });
   }
+
+  const isDuration = values[3] < 1;
   const allValuesComplete = values.every(value => value !== undefined && value !== null && !isNaN(value));
 
   return (
@@ -29,7 +26,7 @@ function App() {
         <Header />
         <div className="inputContainer">
           <Inputinfo values={values} onSelect={changeValues}></Inputinfo>
-          {target ? <p className="pp">INVALID DURATION</p> : undefined}
+          {isDuration ? <p className="pp">INVALID DURATION</p> : undefined}
 
         </div>
         <div className="resultContainer">

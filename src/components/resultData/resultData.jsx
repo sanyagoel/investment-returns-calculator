@@ -32,10 +32,11 @@ export default function Resultdata({ values }) {
               <tbody>
                 <tr>
                 <td>{result.year}</td>
-                <td>{formatter.format(result.startAmount)}</td>
+                <td>{formatter.format(result.endBalance)}</td>
                 <td>{formatter.format(result.yearlyInterest)}</td>
                 <td>{formatter.format(result.totalInterest)}</td>
-                <td>{formatter.format(result.endBalance)}</td>
+                <td>{formatter.format(result.endBalance - result.totalInterest)}</td>
+
                 </tr>
 
               </tbody>
