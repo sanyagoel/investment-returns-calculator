@@ -1,0 +1,49 @@
+.resultContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.resultContainer table{
+    background-color: transparent;
+    color: white;
+    font-size: 0.8em;
+    margin-top: 4rem;
+ 
+}
+
+.resultContainer thead{
+    text-align: end;
+}
+
+
+
+.resultContainer th{
+    padding: 0.8rem;
+    color: rgba(0, 255, 213, 0.834);
+}
+
+.resultContainer td{
+    padding: 0.8rem;
+    text-align: right;
+    animation: pop-up 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes pop-up {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    80%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
