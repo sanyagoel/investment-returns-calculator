@@ -5,6 +5,7 @@ If you're considering getting started with investing, an investment calculator c
 This project is an Investment Return Calculator built with React. It allows users to input their initial investment, annual contributions, rate of return, and investment duration to calculate and visualize their investment growth over time. 
 This project represents my second React project, undertaken just a week after starting to learn React. 
 
+
 # React Concepts Applied
 State Management: The project utilizes React's useState hook to manage and update the state of user inputs and the display of results. This ensures that any changes in user input are dynamically reflected in the results.
 
@@ -18,7 +19,17 @@ Inputinfo Component: Handles user input by capturing values such as initial inve
 
 Resultdata Component: Receives computed data from the parent component and displays it in a structured format, including a formatted table showing the investment growth over time.
 
+
 # CSS and Animations
 CSS Styling: The project makes use of CSS for styling components and creating a visually appealing user interface.
 
 Keyframes and Animations: I learned about keyframes and animations in CSS and applied this knowledge to enhance the user experience by incorporating smooth transitions and animations in the UI.
+
+# Learning Experience
+Through this project, I have gained practical experience in:
+
+Organizing code into modular components.
+
+Implementing state management and lifting state between components.
+
+Applying CSS animations to improve user interface dynamics.
