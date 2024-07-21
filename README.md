@@ -13,8 +13,12 @@ State Lifting and Sharing: State lifting is employed to share state across compo
 Component Structure: The application is divided into three main components:
 
 Header Component: Displays the title and any other introductory information.
+
 Inputinfo Component: Handles user input by capturing values such as initial investment, annual contribution, rate of return, and duration. It updates the state in the parent App component through callback functions.
+
 Resultdata Component: Receives computed data from the parent component and displays it in a structured format, including a formatted table showing the investment growth over time.
-CSS and Animations
+
+#CSS and Animations
 CSS Styling: The project makes use of CSS for styling components and creating a visually appealing user interface.
+
 Keyframes and Animations: I learned about keyframes and animations in CSS and applied this knowledge to enhance the user experience by incorporating smooth transitions and animations in the UI.
