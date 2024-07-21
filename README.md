@@ -18,7 +18,7 @@ Inputinfo Component: Handles user input by capturing values such as initial inve
 
 Resultdata Component: Receives computed data from the parent component and displays it in a structured format, including a formatted table showing the investment growth over time.
 
-#CSS and Animations
+# CSS and Animations
 CSS Styling: The project makes use of CSS for styling components and creating a visually appealing user interface.
 
 Keyframes and Animations: I learned about keyframes and animations in CSS and applied this knowledge to enhance the user experience by incorporating smooth transitions and animations in the UI.
