@@ -29,10 +29,9 @@ function App() {
           {isDuration ? <p className="pp">INVALID DURATION</p> : undefined}
 
         </div>
-        <div className="resultContainer">
+        
 
         {allValuesComplete ? <Resultdata values={values} /> : null}
-        </div>
       </main>
     </>
   );

@@ -1,6 +1,16 @@
-import "./resultData.css";
+import classes from "./resultData.module.css";
 import resultInvestment from "../../investInfo";
 import { formatter } from "../../investInfo";
+import {styled} from 'styled-components';
+
+const Divstyle = styled.div`
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 35rem;
+    margin: auto;
+`
+
 export default function Resultdata({ values }) {
   console.log("hi", values);
   const [startAmount, annualContribution, rateOfReturn, duration] = values;
@@ -13,7 +23,8 @@ export default function Resultdata({ values }) {
   );
 
   return (
-    <>
+    <Divstyle className={classes.resultContainer}>
+
       {console.log(resultArray)}
       <table>
         <thead>
@@ -40,10 +51,10 @@ export default function Resultdata({ values }) {
                 </tr>
 
               </tbody>
-            </>
+              </>
           );
         })}
       </table>
-    </>
+    </Divstyle>
   );
 }
